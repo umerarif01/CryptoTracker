@@ -1,8 +1,10 @@
+
 import Coins from "./Coins";
 
 function Coinslist({ filteredCoins }) {
     return (
         <div>
+           
             {filteredCoins.map(coin => {
         return (
           <Coins
