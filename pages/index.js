@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import CoinsList from '../Components/Coinslist'
 import SearchBar from '../Components/SearchBar';
 import { useState } from 'react';
@@ -17,17 +16,17 @@ export default function Home({filteredCoins}) {
     setSearch(e.target.value.toLowerCase());
   };
   return (
-    <div> 
+    
        <Layout>
        <div className="flex flex-col items-center mt-2 text-white">
        <SearchBar 
-       type='text' placeholder='Search' onChange={handleChange}
+       type='text' placeholder='Search Any Coin' onChange={handleChange}
        />
        </div>
        
      <CoinsList filteredCoins={allCoins} />
      </Layout>
-    </div>
+   
   )
 }
 

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Toggle from './toggle';
 
 const Layout = ({ children, title = 'Crypto Tracker' }) => {
   return (
@@ -10,10 +11,21 @@ const Layout = ({ children, title = 'Crypto Tracker' }) => {
       </Head>
       <header>
         <Link href='/' passHref>
-          <a>
-          <h1 className="flex text-5xl font-bold justify-center 
-       text-purple-800 py-5">CryptoTracker</h1>
-          </a>
+          
+        
+       <div className="sticky top-0 z-50 grid grid-cols-2 
+        bg-purple-600  p-5 md:px-10">
+        
+        {/* <div className="flex justify-center"> */}
+       <a>
+        <h1 className="text-2xl font-bold  
+       text-white hover:cursor-pointer">CryptoTracker</h1>
+         </a>
+         {/* </div> */}
+        <Toggle />
+        
+        </div>
+       
         </Link>
       </header>
       <main>{children}</main>

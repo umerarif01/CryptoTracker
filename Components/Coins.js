@@ -15,9 +15,9 @@ function Coins({
     return (
       <Link href='/coin/[id]' as={`/coin/${id}`}>
         <a>
-      <div className="flex justify-center sm:">
+      <div className="flex justify-center">
         <div className="flex flex-row justify-start items-center h-20 
-        border-b-2 border-purple-400 hover:bg-gray-200">
+        border-b-2 border-purple-400 hover:bg-gray-200 dark:hover:bg-gray-600 transition delay-50">
             <div className="flex items-center pr-6">
             <Image src={image} 
             className="mr-2"
